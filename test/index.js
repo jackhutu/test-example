@@ -32,3 +32,4 @@ describe('/article/:id', function() {
 			});
 	});
 });
+
