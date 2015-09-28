@@ -1,6 +1,8 @@
+<h1>{{name}}的博客</h1>
 <div ng-repeat="article in articleList">
 	<p>{{article.id}}</p>
 	<p>{{article.title}}</p>
 	<p>{{article.content}}</p>
+	<a ui-sref="article({id: article.id})">查看文章内容</a>
 	<hr>
 </div>

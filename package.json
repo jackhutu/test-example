@@ -27,8 +27,14 @@
     "karma-jasmine": "^0.3.6",
     "mocha": "^2.3.3",
     "nock": "^2.12.0",
+    "protractor": "^2.2.0",
     "should": "^7.1.0",
     "sinon": "^1.17.0",
     "supertest": "^1.1.0"
+  },
+  "scripts":{
+    "test": "mocha test",
+    "test-e2e":"protractor protractor.conf.js",
+    "update-webdriver":"webdriver-manager update"
   }
 }
