@@ -5,9 +5,6 @@ var should = require('should');
 var request = require('supertest')(app);
 
 describe('/article/:id', function() {
-	before(function () {
-		
-	});
 
 	it('should return json data',function (done) {
 		request.get('/article/10001')
@@ -33,3 +30,16 @@ describe('/article/:id', function() {
 	});
 });
 
+describe('/*', function() {
+
+	it('should return html',function (done) {
+		request.get('/testIndex')
+			.expect('Content-Type', /html/)
+			.expect(200)
+			.end(function (err,res) {
+				if (err) return done(err);
+				done();
+			});
+	});
+
+});

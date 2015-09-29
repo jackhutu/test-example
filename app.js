@@ -33,7 +33,7 @@ app.get('/articleList',function (req,res) {
 
 //获取用户地址
 app.get('/userAddress',function (req,res) {
-	var ip = ((/127\.0\.0\.1/).test(req.ip) || req.ip === '::1')?'210.75.225.254':req.ip;
+	var ip = ((/127\.0\.0\.1/).test(req.ip) ||/* istanbul ignore next */ req.ip === '::1')?/* istanbul ignore next */'210.75.225.254':req.ip;
 	var url = "http://ip.taobao.com/service/getIpInfo.php?ip=" + ip;
 
 	superagent.get(url)
@@ -48,7 +48,7 @@ app.get('/userAddress',function (req,res) {
 	});
 });
 
-app.get('/',function (req,res) {
+app.get('/*',function (req,res) {
 	return res.sendFile('index.html',{root:__dirname + '/client'});
 });
 
