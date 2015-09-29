@@ -27,10 +27,11 @@ describe('/articleList', function() {
 	});
 
 	it('should return article list length three',function (done) {
+		var mockData = {'id':'10003','title':'中国人加油','content':'油加满了有点晃.'};
 		var stubdir = sinon.stub(fs, "readdirSync");
 		stubdir.returns(['10003.json','10004.json','10005.json']);
 		var stubfile = sinon.stub(fs,"readFileSync");
-		stubfile.returns({'id':'10003','title':'中国人加油','content':'油加满了有点晃.'});
+		stubfile.returns(JSON.stringify(mockData));
 		request.get('/articleList')
 			.set('Accept', 'application/json')
 			.expect('Content-Type', /json/)

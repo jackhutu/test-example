@@ -48,7 +48,7 @@ app.get('/userAddress',function (req,res) {
 	});
 });
 
-app.get('/',function (req,res) {
+app.get('/*',function (req,res) {
 	return res.sendFile('index.html',{root:__dirname + '/client'});
 });
 
