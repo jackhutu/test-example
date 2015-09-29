@@ -6,4 +6,6 @@ node_js:
   - "iojs"
 before_script:
   - npm install -g gulp
-script: gulp
+script: 
+  - gulp test:mocha
+  - gulp test:karma
