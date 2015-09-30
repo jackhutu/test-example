@@ -1,7 +1,7 @@
 # test-example
 =
 
-[![build status](travis-image)][travis-url]
+[![build status][travis-image]][travis-url]
 [![David deps][david-image]][david-url]
 [![node version][node-image]][node-url]
 
@@ -15,4 +15,4 @@
 
 ## 介绍
 
-各种测试样例
+各种测试样例	
