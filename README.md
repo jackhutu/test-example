@@ -11,7 +11,7 @@
 [david-url]: https://david-dm.org/jackhutu/test-example
 
 [coveralls-image]: https://coveralls.io/repos/jackhutu/test-example/badge.svg?branch=master&service=github
-[david-url]: https://coveralls.io/github/jackhutu/test-example?branch=master
+[coveralls-url]: https://coveralls.io/github/jackhutu/test-example?branch=master
 
 ## 介绍
 各种测试样例	
