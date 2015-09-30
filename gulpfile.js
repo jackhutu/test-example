@@ -94,4 +94,10 @@ gulp.task('test:protractor',function () {
 });
 gulp.task('test:e2e',$.sequence('nodemon','webdriver-update','test:protractor'));
 
-gulp.task('default',['test:istanbul']);
+//coveralls
+gulp.task('coveralls',function () {
+	gulp.src(path.join(config.istanbul, '/lcov.info'))
+		.pipe($.coveralls());
+});
+
+gulp.task('default',$.sequence('test:karma','test:istanbul'));
