@@ -5,6 +5,7 @@ node_js:
   - "0.12"
   - "iojs"
 before_script:
-  - npm install -g gulp
+  - npm install -g gulp bower
+  - npm install
 script: gulp
 after_script: gulp coveralls

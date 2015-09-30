@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha test",
     "test-e2e": "protractor protractor.conf.js",
-    "update-webdriver": "webdriver-manager update"
+    "update-webdriver": "webdriver-manager update",
+    "postinstall":"bower install --config.interactive=false"
   },
   "repository": {
     "type": "git",
