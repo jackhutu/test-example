@@ -51,7 +51,7 @@ module.exports = function(config) {
     // 是否开启自动监控
     autoWatch: false,
     // 运行测试的浏览器,需要安装插件
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     // 是否只运行一次就退出karma, 通常和autoWatch配合使用,当autoWatch为true时,此处为false
     singleRun: true
   })
