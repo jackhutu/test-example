@@ -6,6 +6,6 @@ node_js:
   - "iojs"
 before_script:
   - npm install -g gulp bower
-  - npm install
+  - bower install --config.interactive=false
 script: gulp
 after_script: gulp coveralls
